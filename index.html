@@ -244,5 +244,17 @@ document.getElementById('dl_max').addEventListener('input', oblicz);
 // Oblicz przy pierwszym załadowaniu
 window.onload = oblicz;
 </script>
+    
+<script>
+document.addEventListener("contextmenu", function(e){ e.preventDefault(); });
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "F12") {
+    e.preventDefault();
+  }
+});
+</script>
+    
 </body>
+
 </html>
